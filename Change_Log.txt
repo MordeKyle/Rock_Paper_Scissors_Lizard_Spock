@@ -1,5 +1,19 @@
 ﻿***CHANGE LOG***
 
+Version: 1.0 Genesis Robin
+03/18/2014 @10:57
+•Adding everything to form
+	radio buttons
+	resultLabel
+	computerChoiceLabel
+	playButton
+•Added all of the variables
+•Added function generateRandom
+•Added function compareResults
+•Icon added to form
+•Added function rockSelected
+•Added function paperSelected
+
 Version: 0.1 Genesis Robin
 03/12/2014 @ 04:13
 •Creating Repo
