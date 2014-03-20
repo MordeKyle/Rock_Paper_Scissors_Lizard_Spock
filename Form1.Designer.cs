@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rockButton = new System.Windows.Forms.RadioButton();
-            this.paperButton = new System.Windows.Forms.RadioButton();
-            this.scissorsButton = new System.Windows.Forms.RadioButton();
-            this.lizardButton = new System.Windows.Forms.RadioButton();
-            this.spockButton = new System.Windows.Forms.RadioButton();
+            this.rockRad = new System.Windows.Forms.RadioButton();
+            this.paperRad = new System.Windows.Forms.RadioButton();
+            this.scissorsRad = new System.Windows.Forms.RadioButton();
+            this.lizardRad = new System.Windows.Forms.RadioButton();
+            this.spockRad = new System.Windows.Forms.RadioButton();
             this.playButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.computerChoiceLabel = new System.Windows.Forms.Label();
@@ -45,11 +45,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.rockButton);
-            this.groupBox1.Controls.Add(this.paperButton);
-            this.groupBox1.Controls.Add(this.scissorsButton);
-            this.groupBox1.Controls.Add(this.lizardButton);
-            this.groupBox1.Controls.Add(this.spockButton);
+            this.groupBox1.Controls.Add(this.rockRad);
+            this.groupBox1.Controls.Add(this.paperRad);
+            this.groupBox1.Controls.Add(this.scissorsRad);
+            this.groupBox1.Controls.Add(this.lizardRad);
+            this.groupBox1.Controls.Add(this.spockRad);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(102, 139);
@@ -57,55 +57,55 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select One:";
             // 
-            // rockButton
+            // rockRad
             // 
-            this.rockButton.AutoSize = true;
-            this.rockButton.Location = new System.Drawing.Point(6, 19);
-            this.rockButton.Name = "rockButton";
-            this.rockButton.Size = new System.Drawing.Size(51, 17);
-            this.rockButton.TabIndex = 1;
-            this.rockButton.Text = "Rock";
-            this.rockButton.UseVisualStyleBackColor = true;
+            this.rockRad.AutoSize = true;
+            this.rockRad.Location = new System.Drawing.Point(6, 19);
+            this.rockRad.Name = "rockRad";
+            this.rockRad.Size = new System.Drawing.Size(51, 17);
+            this.rockRad.TabIndex = 1;
+            this.rockRad.Text = "Rock";
+            this.rockRad.UseVisualStyleBackColor = true;
             // 
-            // paperButton
+            // paperRad
             // 
-            this.paperButton.AutoSize = true;
-            this.paperButton.Location = new System.Drawing.Point(6, 42);
-            this.paperButton.Name = "paperButton";
-            this.paperButton.Size = new System.Drawing.Size(53, 17);
-            this.paperButton.TabIndex = 2;
-            this.paperButton.Text = "Paper";
-            this.paperButton.UseVisualStyleBackColor = true;
+            this.paperRad.AutoSize = true;
+            this.paperRad.Location = new System.Drawing.Point(6, 42);
+            this.paperRad.Name = "paperRad";
+            this.paperRad.Size = new System.Drawing.Size(53, 17);
+            this.paperRad.TabIndex = 2;
+            this.paperRad.Text = "Paper";
+            this.paperRad.UseVisualStyleBackColor = true;
             // 
-            // scissorsButton
+            // scissorsRad
             // 
-            this.scissorsButton.AutoSize = true;
-            this.scissorsButton.Location = new System.Drawing.Point(6, 65);
-            this.scissorsButton.Name = "scissorsButton";
-            this.scissorsButton.Size = new System.Drawing.Size(64, 17);
-            this.scissorsButton.TabIndex = 3;
-            this.scissorsButton.Text = "Scissors";
-            this.scissorsButton.UseVisualStyleBackColor = true;
+            this.scissorsRad.AutoSize = true;
+            this.scissorsRad.Location = new System.Drawing.Point(6, 65);
+            this.scissorsRad.Name = "scissorsRad";
+            this.scissorsRad.Size = new System.Drawing.Size(64, 17);
+            this.scissorsRad.TabIndex = 3;
+            this.scissorsRad.Text = "Scissors";
+            this.scissorsRad.UseVisualStyleBackColor = true;
             // 
-            // lizardButton
+            // lizardRad
             // 
-            this.lizardButton.AutoSize = true;
-            this.lizardButton.Location = new System.Drawing.Point(6, 88);
-            this.lizardButton.Name = "lizardButton";
-            this.lizardButton.Size = new System.Drawing.Size(53, 17);
-            this.lizardButton.TabIndex = 4;
-            this.lizardButton.Text = "Lizard";
-            this.lizardButton.UseVisualStyleBackColor = true;
+            this.lizardRad.AutoSize = true;
+            this.lizardRad.Location = new System.Drawing.Point(6, 88);
+            this.lizardRad.Name = "lizardRad";
+            this.lizardRad.Size = new System.Drawing.Size(53, 17);
+            this.lizardRad.TabIndex = 4;
+            this.lizardRad.Text = "Lizard";
+            this.lizardRad.UseVisualStyleBackColor = true;
             // 
-            // spockButton
+            // spockRad
             // 
-            this.spockButton.AutoSize = true;
-            this.spockButton.Location = new System.Drawing.Point(6, 111);
-            this.spockButton.Name = "spockButton";
-            this.spockButton.Size = new System.Drawing.Size(56, 17);
-            this.spockButton.TabIndex = 5;
-            this.spockButton.Text = "Spock";
-            this.spockButton.UseVisualStyleBackColor = true;
+            this.spockRad.AutoSize = true;
+            this.spockRad.Location = new System.Drawing.Point(6, 111);
+            this.spockRad.Name = "spockRad";
+            this.spockRad.Size = new System.Drawing.Size(56, 17);
+            this.spockRad.TabIndex = 5;
+            this.spockRad.Text = "Spock";
+            this.spockRad.UseVisualStyleBackColor = true;
             // 
             // playButton
             // 
@@ -178,11 +178,11 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton rockButton;
-        private System.Windows.Forms.RadioButton paperButton;
-        private System.Windows.Forms.RadioButton scissorsButton;
-        private System.Windows.Forms.RadioButton lizardButton;
-        private System.Windows.Forms.RadioButton spockButton;
+        private System.Windows.Forms.RadioButton rockRad;
+        private System.Windows.Forms.RadioButton paperRad;
+        private System.Windows.Forms.RadioButton scissorsRad;
+        private System.Windows.Forms.RadioButton lizardRad;
+        private System.Windows.Forms.RadioButton spockRad;
         private System.Windows.Forms.Button playButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label computerChoiceLabel;

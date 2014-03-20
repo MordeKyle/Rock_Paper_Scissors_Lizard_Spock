@@ -1,7 +1,16 @@
 ﻿***CHANGE LOG***
 
+Version: 1.0.1 Genesis Robin
+03/20/2014 @ 11:23
+•Added function scissorsSelected
+•Added function lizardSelected
+•Added function spockSelected
+•Changed names of radio buttons from nameButton to nameRad respectively
+•Added function playAgain
+•Added function resetEverything
+
 Version: 1.0 Genesis Robin
-03/18/2014 @10:57
+03/18/2014 @ 10:57
 •Adding everything to form
 	radio buttons
 	resultLabel

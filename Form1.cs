@@ -109,6 +109,112 @@ namespace Rock_Paper_Scissors_Lizard_Spock
             }
         }
 
+        private void scissorsSelected()
+        {
+            if(resultHolder == superWinConstant)
+            {
+                computerChoiceLabel.Text = lizardString;
+                resultLabel.Text = winString;
+            }
+            else if(resultHolder == winConstant)
+            {
+                computerChoiceLabel.Text = paperString;
+                resultLabel.Text = winString;
+            }
+            else if(resultHolder == drawConstant)
+            {
+                computerChoiceLabel.Text = scissorsString;
+                resultLabel.Text = drawString;
+            }
+            else if(resultHolder == loseConstant)
+            {
+                computerChoiceLabel.Text = rockString;
+                resultLabel.Text = loseString;
+            }
+            else
+            {
+                computerChoiceLabel.Text = spockString;
+                resultLabel.Text = loseString;
+            }
+        }
+
+        private void lizardSelected()
+        {
+            if(resultHolder == superWinConstant)
+            {
+                computerChoiceLabel.Text = spockString;
+                resultLabel.Text = winString;
+            }
+            else if(resultHolder == winConstant)
+            {
+                computerChoiceLabel.Text = paperString;
+                resultLabel.Text = winString;
+            }
+            else if(resultHolder == drawConstant)
+            {
+                computerChoiceLabel.Text = lizardString;
+                resultLabel.Text = drawString;
+            }
+            else if(resultHolder == loseConstant)
+            {
+                computerChoiceLabel.Text = rockString;
+                resultLabel.Text = loseString;
+            }
+            else
+            {
+                computerChoiceLabel.Text = scissorsString;
+                resultLabel.Text = loseString;
+            }
+        }
+
+        private void spockSelected()
+        {
+            if(resultHolder == superWinConstant)
+            {
+                computerChoiceLabel.Text = rockString;
+                resultLabel.Text = winString;
+            }
+            else if(resultHolder == winConstant)
+            {
+                computerChoiceLabel.Text = scissorsString;
+                resultLabel.Text = winString;
+            }
+            else if(resultHolder == drawConstant)
+            {
+                computerChoiceLabel.Text = spockString;
+                resultLabel.Text = drawString;
+            }
+            else if(resultHolder == loseConstant)
+            {
+                computerChoiceLabel.Text = paperString;
+                resultLabel.Text = loseString;
+            }
+            else
+            {
+                computerChoiceLabel.Text = lizardString;
+                resultLabel.Text = loseString;
+            }
+        }
+
+        private void playAgain()
+        {
+            playButton.Text = "Play Again";
+        }
+
+        private void resetEverything()
+        {
+            paperRad.Checked = false;
+            rockRad.Checked = false;
+            scissorsRad.Checked = false;
+            lizardRad.Checked = false;
+            spockRad.Checked = false;
+
+            computerChoiceLabel.Text = "";
+            resultLabel.Text = "";
+
+            playButton.Text = "Play";
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -116,7 +222,57 @@ namespace Rock_Paper_Scissors_Lizard_Spock
 
         private void playButton_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                if (playButton.Text == "Play")
+                {
+                    if ((paperRad.Checked == false) && (rockRad.Checked == false) && (scissorsRad.Checked == false)
+                                && (spockRad.Checked == false) && (lizardRad.Checked == false))
+                    {
+                        MessageBox.Show("Please Select Rock, Paper, Scissors, Lizard, or Spock.");
+                    }
+
+                    else
+                    {
+                        generateRandom();
+
+                        compareResults();
+
+                        if (paperRad.Checked == true)
+                        {
+                            paperSelected();
+                        }
+                        else if (rockRad.Checked == true)
+                        {
+                            rockSelected();
+                        }
+                        else if (scissorsRad.Checked == true)
+                        {
+                            scissorsSelected();
+                        }
+                        else if (lizardRad.Checked == true)
+                        {
+                            lizardSelected();
+                        }
+                        else
+                        {
+                            spockSelected();
+                        }
+
+                        playAgain();
+
+                    } 
+                }
+
+                else
+                {
+                    resetEverything();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            } 
         }
     }
 }
